@@ -8,6 +8,8 @@ circle.autoResize = false;
 circle.hidden = true;
 circle.autoRenderTexture = false;
 
+const div = new Vector2f(2,2);
+
 jcmp.DrawCircle = function(r, pos, size)
 {
     // If the circle is off our screen, don't draw it.
@@ -16,5 +18,5 @@ jcmp.DrawCircle = function(r, pos, size)
         return;
     }
 
-    r.DrawTexture(circle.texture, pos, size);
+    r.DrawTexture(circle.texture, pos.sub(size.div(div)), size);
 }
