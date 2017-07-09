@@ -1,6 +1,8 @@
 # jc3mp-debug-circle
 An easy to use rendering utility to debug things fast
 
+![alt](https://i.imgur.com/8xRsdEx.png)
+
 ## Installation
 
 Just drop it in your packages directory, and you're done!
